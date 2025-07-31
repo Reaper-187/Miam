@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Header = () => {
   return (
     <>
@@ -8,9 +10,8 @@ export const Header = () => {
           </div>
 
           <ol className="flex gap-10">
-            <ul>Services</ul>
-            <ul>About us</ul>
-            <ul>Projects</ul>
+            <Link to="/">Home</Link>
+            <Link to="/services">Services</Link>
           </ol>
 
           <div>

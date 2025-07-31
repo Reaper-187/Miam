@@ -1,0 +1,63 @@
+/* Wer sind wir Section */
+.us-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #e3cfab;
+  width: 50%;
+}
+
+.us-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.us-img2 {
+  width: 50%;
+  border-radius: 25px;
+}
+
+.us-head-line {
+  font-size: 3vw;
+  position: absolute;
+  color: black;
+}
+/* Wer sind wir Section */
+
+/* ------------------------------------------------------------------- */
+
+/* Service Section */
+.cut-line {
+  display: flex;
+  justify-self: center;
+  margin: 5rem 0;
+  width: 90%;
+  background-color: #e9f2f5;
+  padding: 0.1rem;
+}
+.service-section {
+  background-color: #e3cfab;
+  width: 50%;
+}
+.service-img-wrapper {
+  width: 80%;
+}
+.service-img {
+  width: 80%;
+  height: 25vh;
+  object-position: top;
+  object-fit: cover;
+  margin: 2rem 0;
+  border-radius: 20px;
+  transform: translateX(-40px);
+}
+/* Service Section */
+
+/* ------------------------------------------------------------------- */
+
+/* Project-Seciton*/
+
+/* Project-Seciton*/
