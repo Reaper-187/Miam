@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 
-export const ProjectShowcaseSection = () => {
+export const MarketingShowcaseSection = () => {
   return (
     <div className="text-center">
       <p className="cut-line"></p>
