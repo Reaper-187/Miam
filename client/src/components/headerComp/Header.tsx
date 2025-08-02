@@ -9,9 +9,11 @@ export const Header = () => {
             <h1 className="lg:text-xl">MIAM D Consulting</h1>
           </div>
 
-          <ol className="flex gap-10">
+          <ol className="flex gap-10 text-red-500 text-2xl font-bold">
             <Link to="/">Home</Link>
-            <Link to="/services">Services</Link>
+            <Link to="/marketing">Marketing</Link>
+            <Link to="/finance">Finance</Link>
+            <Link to="/software">Software</Link>
           </ol>
 
           <div>

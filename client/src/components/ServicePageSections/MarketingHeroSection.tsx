@@ -1,7 +1,7 @@
 import { CircleArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
 
-export const ServiceHeroSection = () => {
+export const MarketingHeroSection = () => {
   return (
     <div className="flex">
       <div className="relative w-full">

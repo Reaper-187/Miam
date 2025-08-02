@@ -1,0 +1,59 @@
+import {
+  Brain,
+  ChartLine,
+  House,
+  ShieldPlus,
+  Sprout,
+  TriangleAlert,
+  type LucideIcon,
+} from "lucide-react";
+
+type InvestAdvantages = {
+  icons: LucideIcon;
+  title: string;
+};
+
+const inverstData: InvestAdvantages[] = [
+  {
+    icons: Sprout,
+    title: "Innovative investmentstrategien",
+  },
+  {
+    icons: ShieldPlus,
+    title: "Sichere Altersvorsorge",
+  },
+  {
+    icons: Brain,
+    title: "Intelligente Vermögensplanung",
+  },
+  {
+    icons: TriangleAlert,
+    title: "Effizientes Risiko-management",
+  },
+  {
+    icons: House,
+    title: "Clevere Immobilien-finanzierung",
+  },
+  {
+    icons: ChartLine,
+    title: "Ganzheitliche Finanzanalyse",
+  },
+];
+
+export const FinanceInvestSection = () => {
+  return (
+    <div className="grid grid-cols-2 gap-y-10 p-10 w-1/2">
+      {inverstData.map((investOptions, i) => (
+        <div key={i} className="flex items-center gap-4">
+          <investOptions.icons size={40} />
+          <p className="text-xl font-semibold">{investOptions.title}</p>
+        </div>
+      ))}
+
+      <p className="text-center text-xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor
+        sed necessitatibus
+      </p>
+    </div>
+  );
+};

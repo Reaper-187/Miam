@@ -2,7 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Header } from "./components/headerComp/Header";
 import { Home } from "./Pages/Home";
-import { Service } from "./Pages/Service";
+import { Marketing } from "./Pages/Marketing";
+import { Finance } from "./Pages/Finance";
+import { MarketingShowcaseSection } from "./components/ServicePageSections/MarketingShowcaseSection";
+import { Footer } from "./components/FooterSection/Footer";
+import { Software } from "./Pages/Software";
 
 function App() {
   return (
@@ -10,8 +14,12 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Service />} />
+        <Route path="/marketing" element={<Marketing />} />
+        <Route path="/finance" element={<Finance />} />
+        <Route path="/software" element={<Software />} />
       </Routes>
+      <MarketingShowcaseSection />
+      <Footer />
     </>
   );
 }

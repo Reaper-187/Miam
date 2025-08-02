@@ -2,8 +2,6 @@ import { CircleArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
 import { MarketingSolutions } from "./MarketingSolutions";
 import { StrategicSection } from "./StrategieComp/StrategicSection";
-import { MarketingShowcaseSection } from "./MarketingShowcaseSection";
-import { Footer } from "../FooterSection/Footer";
 
 export const CampaignSection = () => {
   return (
@@ -25,7 +23,7 @@ export const CampaignSection = () => {
             provident atque voluptas blanditiis iste deleniti!
           </p>
         </div>
-        <div className="relative flex items-center justify-between">
+        <div className="relative flex items-center">
           <div className="text-2xl space-y-10 p-5">
             <p className="w-1/2">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
@@ -42,15 +40,12 @@ export const CampaignSection = () => {
             </Button>
           </div>
           <img
-            className="absolute right-10 -top-130 w-1/3 rounded-2xl"
+            className="absolute right-80 -top-80 w-1/4 rounded-2xl"
             src="./device-meeting.jpg"
             alt="Kitchendevice-meeting"
           />
         </div>
       </div>
-
-      <MarketingShowcaseSection />
-      <Footer />
     </div>
   );
 };
