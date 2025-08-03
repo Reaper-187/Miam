@@ -18,8 +18,8 @@ function App() {
         <Route path="/finance" element={<Finance />} />
         <Route path="/software" element={<Software />} />
       </Routes>
-      <MarketingShowcaseSection />
-      <Footer />
+      {/* <MarketingShowcaseSection />
+      <Footer /> */}
     </>
   );
 }
