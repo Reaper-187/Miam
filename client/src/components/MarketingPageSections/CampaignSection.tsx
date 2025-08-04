@@ -1,8 +1,8 @@
-export const SoftwareCampaign = () => {
+export const CampaignSection = () => {
   return (
     <div>
-      <div className="h-[150px] flex justify-center bg-[#18A999] lg:h-[300px]">
-        <p className="text-center w-full pt-8 md:text-xl xl:text-3xl">
+      <div className="h-[150px] flex justify-center items-start bg-[#FDA821] lg:h-[300px]">
+        <p className="text-base text-center mt-10 lg:text-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
           ducimus eius repudiandae sapiente ad, inventore reprehenderit fugiat
         </p>

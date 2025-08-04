@@ -42,7 +42,7 @@ const inverstData: InvestAdvantages[] = [
 
 export const FinanceInvestSection = () => {
   return (
-    <div className="grid grid-cols-2 gap-y-10 p-10 w-1/2">
+    <div className="grid grid-cols-1 gap-y-10 p-10 md:grid-cols-3">
       {inverstData.map((investOptions, i) => (
         <div key={i} className="flex items-center gap-4">
           <investOptions.icons size={40} />
@@ -50,7 +50,7 @@ export const FinanceInvestSection = () => {
         </div>
       ))}
 
-      <p className="text-center text-xl">
+      <p className="text-center md:text-start md:text-xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor
         sed necessitatibus
       </p>

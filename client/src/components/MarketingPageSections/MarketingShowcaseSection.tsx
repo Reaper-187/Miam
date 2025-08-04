@@ -12,13 +12,17 @@ export const MarketingShowcaseSection = () => {
   return (
     <div className="text-center">
       <p className="cut-line"></p>
-      <div className="flex w-[50%] justify-self-center">
+      <div className="flex md:w-[50%] lg:w-[80%] justify-self-center">
         <Carousel>
           <CarouselContent>
             <CarouselItem>
               <div className="flex">
-                <img className="w-1/2" src="./finance-service.jpg" alt="img1" />
-                <div>
+                <img
+                  className="w-fit lg:w-1/2"
+                  src="./finance-service.jpg"
+                  alt="img1"
+                />
+                <div className="hidden lg:block">
                   <h3>Projekt X</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -29,17 +33,27 @@ export const MarketingShowcaseSection = () => {
               </div>
             </CarouselItem>
             <CarouselItem>
-              <img className="w-1/2" src="./finance-service.jpg" alt="img1" />
+              <img
+                className="w-fit lg:w-1/2"
+                src="./finance-service.jpg"
+                alt="img1"
+              />
             </CarouselItem>
             <CarouselItem>
-              <img className="w-1/2" src="./finance-service.jpg" alt="img1" />
+              <img
+                className="w-fit lg:w-1/2"
+                src="./finance-service.jpg"
+                alt="img1"
+              />
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <span className="hidden md:block">
+            <CarouselPrevious />
+            <CarouselNext />
+          </span>
         </Carousel>
       </div>
-      <p className="w-1/2 flex justify-self-center my-5">
+      <p className="lg:w-1/2 flex justify-self-center my-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
         voluptates magnam impedit quam voluptatibus! Eum quis dolorum ut
         dolores, magni excepturi, amet fuga ipsa architecto sit dolore
@@ -49,11 +63,13 @@ export const MarketingShowcaseSection = () => {
         Weitere Projekte <CircleArrowRight />
       </Button>
 
-      <div className="flex justify-evenly items-center p-10 w-full bg-[#E3CFAB]">
-        <h1 className="text-4xl">Bereit für den nächsten Schritt ?</h1>
+      <div className="flex flex-col justify-evenly items-center p-10 w-full bg-[#E3CFAB] md:flex-row">
+        <h1 className="text-base md:text-xl lg:text-2xl">
+          Bereit für den nächsten Schritt ?
+        </h1>
         <div className="flex gap-5 items-center">
-          <Button className="text-xl">Termin buchen</Button>
-          <Button className="text-xl">Mehr über uns</Button>
+          <Button className="mt-3 md:mt-0 lg:text-xl">Termin buchen</Button>
+          <Button className="mt-3 md:mt-0 lg:text-xl">Mehr über uns</Button>
         </div>
       </div>
     </div>

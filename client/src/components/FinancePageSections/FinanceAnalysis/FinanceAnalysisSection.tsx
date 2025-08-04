@@ -42,11 +42,11 @@ export const FinanceAnalysisSection = () => {
     setActiveCardIndex(i);
   };
   return (
-    <div className="flex justify-evenly h-[500px] items-center bg-[#12203E] my-30">
+    <div className="hidden md:flex justify-evenly h-[500px] items-center bg-[#12203E] my-30">
       {analysisData.map((cardInfo, i) => (
         <Card
           key={i}
-          className={i === activeCardIndex ? "w-1/3 p-5" : "hidden"}
+          className={i === activeCardIndex ? "w-[40%] p-5" : "hidden"}
         >
           <AnalysisCards {...cardInfo} />
         </Card>
@@ -54,11 +54,15 @@ export const FinanceAnalysisSection = () => {
 
       <div className="flex flex-col w-1/4 space-y-5 justify-end">
         <p className="text-blue-300 text-xl">So arbeiten wir mit Dir</p>
-        <h3 className="text-white text-3xl">
+        <h3 className="text-white lg:text-3xl">
           Strategische <br /> Finanzberatung für Deinen <br /> Erfolg.
         </h3>
         {analysisData.map((cardInfo, i) => (
-          <Button className="text-2xl" key={i} onClick={() => showCard(i)}>
+          <Button
+            className="text-xs lg:text-base"
+            key={i}
+            onClick={() => showCard(i)}
+          >
             {cardInfo.cardNumber}: {cardInfo.title}
           </Button>
         ))}

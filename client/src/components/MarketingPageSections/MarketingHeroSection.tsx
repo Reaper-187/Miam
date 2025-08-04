@@ -9,13 +9,15 @@ export const MarketingHeroSection = () => {
           src="./service-team-work.jpg"
           alt="Kitchendevice shake Hands with Alpha"
         />
-        <div className="absolute top-1/3 left-1/2 -translate-1/2 text-5xl">
-          <h1 className="text-center text-black text-7xl">
+        <div className="absolute top-1/2 left-1/2 -translate-1/2 space-y-3 md:text-2xl lg:text-3xl">
+          <h1 className="text-center text-black text-xl font-semibold md:text-2xl lg:text-4xl">
             Strategisch gedacht. <br /> Kreative gemacht.
           </h1>
-          <p className="my-10 text-white">Wir bringen Marken in Bewegung.</p>
-          <div className="flex justify-center mt-10">
-            <Button className="text-xl">
+          <p className="text-white text-center md:my-5 lg:my-10">
+            Wir bringen Marken in Bewegung.
+          </p>
+          <div className="flex justify-center md:mt-5 lg:mt-10">
+            <Button className="text-xs md:text-base lg:text-xl">
               Show me <CircleArrowRight />
             </Button>
           </div>

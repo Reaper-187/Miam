@@ -5,9 +5,15 @@ export const FinanceHeroSection = () => {
   return (
     <div className="relative">
       <img src="marketing-img1.jpg" alt="device-talking" />
-      <div className="absolute top-1/2 left-1/2 -translate-1/2 flex justify-around w-full">
-        <div className="flex flex-col text-white w-1/5 text-3xl space-y-5">
-          <p>
+
+      <div className="absolute top-1/2 left-1/2 -translate-1/2 w-full md:w-1/3">
+        <div className="flex justify-center flex-col items-center gap-5 md:gap-10">
+          <h1 className="text-center text-white md:text-xl lg:text-3xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
+            sapiente?
+          </h1>
+
+          <p className="hidden md:block text-center text-white md:text-xl lg:text-2xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Laboriosam, cupiditate.
           </p>
@@ -15,10 +21,6 @@ export const FinanceHeroSection = () => {
             Jetzt Buchen <CircleArrowRight />
           </Button>
         </div>
-        <h1 className="text-white text-5xl w-1/3 text-center">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos,
-          iusto!
-        </h1>
       </div>
     </div>
   );

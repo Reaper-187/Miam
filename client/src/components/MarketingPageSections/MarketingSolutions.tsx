@@ -23,20 +23,20 @@ const mindPointData: MindPoint[] = [
 
 export const MarketingSolutions = () => {
   return (
-    <div>
-      <div className="flex justify-end items-center gap-15">
+    <>
+      <div className="flex justify-end items-center flex-col md:gap-15 lg:items-start lg:flex-row">
         <img
-          className="w-1/2 translate-y-15 rounded-2xl"
+          className=" p-2 rounded-2xl lg:w-1/2 -translate-y-10 xl:-translate-y-30"
           src="./kitchendevice-present.jpg"
           alt="kitchendevice is doing a presentation"
         />
 
-        <ul className="space-y-5 text-xl mr-5">
+        <ul className="space-y-5 text-xl text-center mr-5 lg:text-start">
           {mindPointData.map((eachBullet, i) => (
             <li key={i}>{eachBullet.bulletPoint}</li>
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 };

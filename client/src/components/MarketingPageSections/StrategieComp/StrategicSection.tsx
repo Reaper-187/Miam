@@ -30,7 +30,7 @@ const data = [
 
 export const StrategicSection = () => {
   return (
-    <>
+    <div className="grid grid-cols-2 md:grid-cols-4">
       {data.map((item, index) => (
         <StrategicItem
           key={index}
@@ -39,6 +39,6 @@ export const StrategicSection = () => {
           description={item.description}
         />
       ))}
-    </>
+    </div>
   );
 };
