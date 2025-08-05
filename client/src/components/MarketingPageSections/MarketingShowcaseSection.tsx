@@ -54,16 +54,15 @@ export const MarketingShowcaseSection = () => {
         </Carousel>
       </div>
       <p className="lg:w-1/2 flex justify-self-center my-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-        voluptates magnam impedit quam voluptatibus! Eum quis dolorum ut
-        dolores, magni excepturi, amet fuga ipsa architecto sit dolore
-        voluptatibus, illum a.
+        Ob kleine Idee oder großes Vorhaben - unsere Projekte zeigen, wie wir
+        Dinge ins Rollen bringen. Statt viel zu versprechen, lassen wir lieber
+        Ergebnisse sprechen - und die Menschen, die mit uns gearbeitet haben.
       </p>
       <Button className="my-5">
         Weitere Projekte <CircleArrowRight />
       </Button>
 
-      <div className="flex flex-col justify-evenly items-center p-10 w-full bg-[#E3CFAB] md:flex-row">
+      <div className="flex flex-col justify-evenly items-center p-10 w-full bg-[#f4f3f0] md:flex-row">
         <h1 className="text-base md:text-xl lg:text-2xl">
           Bereit für den nächsten Schritt ?
         </h1>

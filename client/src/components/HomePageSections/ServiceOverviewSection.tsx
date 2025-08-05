@@ -19,13 +19,16 @@ export const ServiceOverviewSection = () => {
       {!isMobile ? (
         <section className="flex flex-col px-4 py-10 lg:p-0 justify-between items-center flex-row">
           <p className="text-center pl-2 lg:text-2xl lg:text-start lg:w-1/2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-            Dolor nisi porro labore totam adipisci odio praesentium aliquam
+            Von der kreativen Markenentwicklung über finanzielle Strategien bis
+            hin zu
             <br />
-            assumenda mollitia libero tempore
+            smarten Softwarelösungen.
+            <br />
+            Wir bündeln unser Know-How, um ganzheitliche Beratung mit Wirkung zu
+            liefern.
           </p>
 
-          <div className="bg-[#e3cfab] rounded-2xl w-full lg:w-1/2 rounded-none ">
+          <div className="bg-[#f4f3f0] rounded-2xl w-full lg:w-1/2 rounded-none ">
             <div className="flex flex-col gap-6 lg:gap-0 w-[80%]">
               {data.map((item) => (
                 <div
@@ -47,13 +50,17 @@ export const ServiceOverviewSection = () => {
         </section>
       ) : (
         <section className="flex flex-col lg:flex-row items-center gap-8 px-4 py-10">
-          <p className="text-center text-base lg:text-2xl lg:text-left lg:w-1/3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi
-            porro labore totam adipisci odio praesentium aliquam assumenda
-            mollitia libero tempore
+          <p className="text-center pl-2 lg:text-2xl lg:text-start lg:w-1/2">
+            Von der kreativen Markenentwicklung über finanzielle Strategien bis
+            hin zu
+            <br />
+            smarten Softwarelösungen.
+            <br />
+            Wir bündeln unser Know-How, um ganzheitliche Beratung mit Wirkung zu
+            liefern.
           </p>
 
-          <div className="bg-[#e3cfab] w-full lg:w-2/3 p-6 rounded-2xl">
+          <div className="bg-[#f4f3f0] w-full lg:w-2/3 p-6 rounded-2xl">
             <div className="flex flex-col gap-6">
               {data.map((item) => (
                 <div

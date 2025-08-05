@@ -38,9 +38,9 @@ export const ConvictionSection = () => {
             Warum MIAM D <br /> Consulting
           </h1>
           <p className="text-center md:text-start">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur
-            cumque reiciendis? Nihil deleniti expedita mollitia esse possimus,
-            aspernatur voluptates.
+            In MIAM D setzen wir auf Werte, die deinen Erfolg und deine
+            Sicherheit in den Mittelpunkt stellen. Hier sind die Gründe, warum
+            wir der ideale Begleiter für deine finanzielle Reise sind:
           </p>
         </div>
         <img
@@ -50,34 +50,27 @@ export const ConvictionSection = () => {
         />
       </div>
 
-      <div>
-        <div className="flex justify-between items-center mt-15 flex-col md:px-30 lg:px-45">
-          <Button className="text-base lg:text-xl">
-            jetzt Buchen <CircleArrowRight />
-          </Button>
-          <img
-            className="hidden md:w-1/3 rotate-180"
-            src="./arrow.png"
-            alt=""
-          />
-          <div className="mt-1">
-            <div
-              className={
-                !isMobile
-                  ? "grid grid-cols-3 gap-5 mt-5"
-                  : "grid grid-cols-1 gap-5"
-              }
-            >
-              {data.map((items) => (
-                <div
-                  key={items.title}
-                  className="flex items-center gap-2 md:flex-col md:text-center"
-                >
-                  <items.icon className="w-6 h-6 md:w-10 md:h-10" />
-                  <span className="text-base md:text-xl">{items.title}</span>
-                </div>
-              ))}
-            </div>
+      <div className="flex items-center justify-evenly mt-15 flex-col md:flex-row md:px-30 lg:px-45">
+        <Button className="text-xs md:text-base lg:text-xl">
+          jetzt Buchen <CircleArrowRight />
+        </Button>
+        <div className="mt-1">
+          <div
+            className={
+              !isMobile
+                ? "grid grid-cols-3 gap-5 mt-5"
+                : "grid grid-cols-1 gap-5"
+            }
+          >
+            {data.map((items) => (
+              <div
+                key={items.title}
+                className="flex items-center gap-2 md:flex-col md:text-center"
+              >
+                <items.icon className="w-6 h-6 md:w-10 md:h-10" />
+                <span className="text-base md:text-xl">{items.title}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

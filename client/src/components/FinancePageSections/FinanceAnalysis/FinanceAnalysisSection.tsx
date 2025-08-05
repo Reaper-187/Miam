@@ -42,7 +42,7 @@ export const FinanceAnalysisSection = () => {
     setActiveCardIndex(i);
   };
   return (
-    <div className="hidden md:flex justify-evenly h-[500px] items-center bg-[#12203E] my-30">
+    <div className="hidden md:flex justify-evenly h-[500px] items-center bg-[#40256d] my-30">
       {analysisData.map((cardInfo, i) => (
         <Card
           key={i}

@@ -51,8 +51,8 @@ export const FinanceInvestSection = () => {
       ))}
 
       <p className="text-center md:text-start md:text-xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor
-        sed necessitatibus
+        Von der Vermögensplanung bis zu Altersvorsorge - deine Ziele sind unser
+        Kompass.
       </p>
     </div>
   );

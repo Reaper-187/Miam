@@ -49,7 +49,7 @@ export const ProjectShowcaseSection = () => {
         Weitere Projekte <CircleArrowRight />
       </Button>
 
-      <div className="flex justify-evenly items-center p-10 w-full bg-[#E3CFAB]">
+      <div className="flex justify-evenly items-center p-10 w-full bg-[#f4f3f0]">
         <h1 className="text-4xl">Bereit für den nächsten Schritt ?</h1>
         <div className="flex gap-5 items-center">
           <Button className="text-xl">Termin buchen</Button>

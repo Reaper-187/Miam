@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <div className="py-5">
       <p className="cut-line"></p>
-      <div className="flex items-center justify-around flex-col space-y-5">
+      <div className="flex items-center justify-around flex-col space-y-5 md:flex-row">
         <div className="flex flex-col gap-5">
           <h1 className="font-semibold text-xl">MIAM D Consulting</h1>
           <div className="flex gap-5">

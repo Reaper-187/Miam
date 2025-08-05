@@ -37,6 +37,7 @@ export const Header = () => {
             <NavLink to="/marketing">Marketing</NavLink>
             <NavLink to="/finance">Finance</NavLink>
             <NavLink to="/software">Software</NavLink>
+            <NavLink to="/termin-buchen">Termin-buchen</NavLink>
           </nav>
 
           {/* Mobile Menu Button */}

@@ -15,7 +15,7 @@ export const StrategicItem = ({
   const isMobile = useIsMobile();
 
   return (
-    <div className="flex flex-col items-center text-center px-4">
+    <div className="group flex flex-col items-center text-center px-4">
       <h1 className="text-lg font-semibold my-3 md:text-2xl">
         {title.split("&").map((part, i) => (
           <span key={i} className="block">
@@ -32,7 +32,10 @@ export const StrategicItem = ({
         </div>
       )}
 
-      <p className={!isMobile ? "w-full text-sm md:text-base" : "hidden"}>
+      <p
+        className={`${!isMobile ? "w-full text-sm md:text-base" : "hidden"} 
+     opacity-0 group-hover:opacity-100 transition-opacity duration-200`}
+      >
         {description}
       </p>
     </div>

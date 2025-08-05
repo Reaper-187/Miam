@@ -4,10 +4,10 @@ import { Button } from "../ui/button";
 export const MarketingLastSection = () => {
   return (
     <>
-      <div className="relative flex items-center bg-[#FDA821] mt-2 py-3 lg:h-[300px]">
+      <div className="relative flex items-center bg-[#b12226] mt-2 py-3 lg:h-[300px]">
         <p className="text-xl leading-10 sm:text-center lg:w-1/2 lg:text-2xl">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut provident
-          atque voluptas blanditiis iste deleniti!
+          Wir kombinieren Kreativität, Strategie und datenbasierte Analysen, um
+          für Sie nachhaltige Ergebnisse zu erzielen.
         </p>
 
         <img
@@ -16,15 +16,15 @@ export const MarketingLastSection = () => {
           alt="Kitchendevice-meeting"
         />
       </div>
-      <div className="flex flex-col items-center text-2xl space-y-10 px-8 xl:items-start">
-        <p className="text-base md:text-xl">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+      <div className="flex flex-col items-center text-2xl space-y-10 p-8 xl:items-start">
+        <p className="text-base md:text-2xl">
+          Lass uns dein nächstes Kapitel <br /> gemeinsam schreiben.
         </p>
         <p className="text-base md:text-xl">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+          Du hast ein Ziel - wir haben den Plan.
         </p>
         <p className="text-base md:text-xl">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+          Melde dich für ein unverbindliches Erstgespräch
         </p>
         <Button className="text-base flex self-center lg:text-xl xl:self-start">
           jetzt Buchen <CircleArrowRight />

@@ -6,25 +6,25 @@ const data = [
     title: "Analyse & Strategie",
     Icon: ChartColumnBig,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum obcaecati nihil aspernatur accusamus amet molestias",
+      "Wir lernen dich, dein Angebot und deine Zielgruppe kennen - und entwickeln eine passagenaue Marketingstrategie",
   },
   {
     title: "Konzept & Kreativität",
     Icon: Lightbulb,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum obcaecati nihil aspernatur accusamus amet molestias",
+      "Ob Kampagne, Content oder Branding - wir entwicheln starke Ideen mit Wiederekennungswert.",
   },
   {
     title: "Umsetzung & Launch",
     Icon: Rocket,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum obcaecati nihil aspernatur accusamus amet molestias",
+      "Wir bringen deine Botschaft auf den richtigen Kanal - effizient, zielgerichtet und wirkungsvoll.",
   },
   {
     title: "Analyse & Optimierung",
     Icon: Target,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum obcaecati nihil aspernatur accusamus amet molestias",
+      "Wir messen, was wirkt - und optimieren laufend für noch bessere Ergebnisse.",
   },
 ];
 

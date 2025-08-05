@@ -4,27 +4,23 @@ type MindPoint = {
 
 const mindPointData: MindPoint[] = [
   {
-    bulletPoint:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,laboriosam?",
+    bulletPoint: "- Social-Media-Kampagnen mit Reichweite",
   },
   {
-    bulletPoint:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,laboriosam?",
+    bulletPoint: "- Performance-Marketing & Google Ads",
   },
   {
-    bulletPoint:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,laboriosam?",
+    bulletPoint: "- Branding & Design, das hängen bleibt",
   },
   {
-    bulletPoint:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,laboriosam?",
+    bulletPoint: "- E-Mail- & Funnelstrategien, die konvertieren",
   },
 ];
 
 export const MarketingSolutions = () => {
   return (
     <>
-      <div className="flex justify-end items-center flex-col md:gap-15 lg:items-start lg:flex-row">
+      <div className="flex justify-center items-center flex-col md:gap-15 lg:items-start lg:flex-row">
         <img
           className=" p-2 rounded-2xl lg:w-1/2 -translate-y-10 xl:-translate-y-30"
           src="./kitchendevice-present.jpg"
