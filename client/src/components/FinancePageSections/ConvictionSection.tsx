@@ -1,12 +1,11 @@
 import {
   type LucideIcon,
-  CircleArrowRight,
   Fingerprint,
   HandCoins,
   TextSearch,
 } from "lucide-react";
-import { Button } from "../ui/button";
 import { useIsMobile } from "../../Hooks/MediaHook";
+import { FromButton } from "../FromComp/FromButton";
 
 type StrategicItemProps = {
   icon: LucideIcon;
@@ -51,9 +50,7 @@ export const ConvictionSection = () => {
       </div>
 
       <div className="flex items-center justify-evenly mt-15 flex-col md:flex-row md:px-30 lg:px-45">
-        <Button className="text-xs md:text-base lg:text-xl">
-          jetzt Buchen <CircleArrowRight />
-        </Button>
+        <FromButton />
         <div className="mt-1">
           <div
             className={

@@ -1,5 +1,4 @@
-import { CircleArrowRight } from "lucide-react";
-import { Button } from "../ui/button";
+import { FromButton } from "../FromComp/FromButton";
 
 export const SoftwareHeroSection = () => {
   return (
@@ -15,9 +14,7 @@ export const SoftwareHeroSection = () => {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Laboriosam, cupiditate.
           </p>
-          <Button className="w-fit">
-            Jetzt Buchen <CircleArrowRight />
-          </Button>
+          <FromButton />
         </div>
       </div>
     </div>

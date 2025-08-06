@@ -11,9 +11,21 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-export function Calendar24() {
+interface Calendar24Props {
+  date?: Date;
+  onDateChange: (date?: Date) => void;
+  time: string;
+  onTimeChange: (time: string) => void;
+}
+
+export function Calendar24({
+  date,
+  onDateChange,
+  time,
+  onTimeChange,
+}: Calendar24Props) {
   const [open, setOpen] = React.useState(false);
-  const [date, setDate] = React.useState<Date | undefined>(undefined);
+  // const [date, setDate] = React.useState<Date | undefined>(undefined);
 
   return (
     <div className="flex gap-4">
@@ -33,12 +45,21 @@ export function Calendar24() {
             </Button>
           </PopoverTrigger>
           <PopoverContent className="w-auto overflow-hidden p-0" align="start">
-            <Calendar
+            {/* <Calendar
               mode="single"
               selected={date}
               captionLayout="dropdown"
               onSelect={(date) => {
                 setDate(date);
+                setOpen(false);
+              }}
+            /> */}
+
+            <Calendar
+              mode="single"
+              selected={date}
+              onSelect={(date) => {
+                onDateChange(date); // State-Update in FormModal
                 setOpen(false);
               }}
             />
@@ -49,12 +70,20 @@ export function Calendar24() {
         <Label htmlFor="time-picker" className="px-1">
           Time
         </Label>
-        <Input
+        {/* <Input
           type="time"
           id="time-picker"
           step="1"
           defaultValue="10:30:00"
           className="bg-background appearance-none [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none"
+        /> */}
+
+        <Input
+          type="time"
+          value={time}
+          onChange={(e) => onTimeChange(e.target.value)} // State-Update in FormModal
+          step="1"
+          className="bg-background [&::-webkit-calendar-picker-indicator]:hidden"
         />
       </div>
     </div>

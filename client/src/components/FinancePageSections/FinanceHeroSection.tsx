@@ -1,5 +1,4 @@
-import { CircleArrowRight } from "lucide-react";
-import { Button } from "../ui/button";
+import { FromButton } from "../FromComp/FromButton";
 
 export const FinanceHeroSection = () => {
   return (
@@ -15,9 +14,7 @@ export const FinanceHeroSection = () => {
           <p className="hidden md:block text-center text-white md:text-xl lg:text-2xl">
             Wir gestalten deine finanzielle Freiheit
           </p>
-          <Button>
-            Jetzt Buchen <CircleArrowRight />
-          </Button>
+          <FromButton />
         </div>
       </div>
     </div>

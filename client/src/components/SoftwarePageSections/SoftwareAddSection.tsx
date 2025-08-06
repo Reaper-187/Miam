@@ -33,9 +33,9 @@ export const SoftwareAddSection = () => {
       <div className="h-[350px] bg-[#18A999] md:h-[400px] xl:h-[550px]">
         <div className="flex flex-col justify-evenly items-center h-full md:flex-row">
           <p className="w-full p-2 text-center md:text-start md:text-xl md:w-1/2 lg:text-2xl ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-            porro placeat veniam similique atque animi facere dolorum deleniti
-            nobis molestias?
+            Wir bauen Webseiten und Web-Apps, die deine sorgen in der
+            Represenation verschwinden lässt, damit du dich auf das Wachstum
+            Konzentrieren kannst.
           </p>
 
           <div className="flex flex-col mt-5 text-2xl md:flex-row">

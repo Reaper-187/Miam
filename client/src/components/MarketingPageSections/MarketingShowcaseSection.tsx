@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
+import { FromButton } from "../FromComp/FromButton";
 
 export const MarketingShowcaseSection = () => {
   return (
@@ -67,8 +68,11 @@ export const MarketingShowcaseSection = () => {
           Bereit für den nächsten Schritt ?
         </h1>
         <div className="flex gap-5 items-center">
-          <Button className="mt-3 md:mt-0 lg:text-xl">Termin buchen</Button>
-          <Button className="mt-3 md:mt-0 lg:text-xl">Mehr über uns</Button>
+          <FromButton />
+          {/* <<Button className="mt-3 md:mt-0 lg:text-xl">Termin buchen</Button>> */}
+          <Button className="mt-3 text-base md:mt-0 lg:text-lg">
+            Mehr über uns
+          </Button>
         </div>
       </div>
     </div>
