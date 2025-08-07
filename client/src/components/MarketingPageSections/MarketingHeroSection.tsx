@@ -5,7 +5,7 @@ export const MarketingHeroSection = () => {
     <div className="flex">
       <div className="relative w-full">
         <img
-          src="./service-team-work.jpg"
+          src="./marketing/marketing-team-work.jpg"
           alt="Kitchendevice shake Hands with Alpha"
         />
         <div className="absolute top-1/2 left-1/2 -translate-1/2 space-y-3 md:text-2xl lg:text-3xl">

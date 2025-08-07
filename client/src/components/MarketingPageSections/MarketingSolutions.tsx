@@ -23,8 +23,8 @@ export const MarketingSolutions = () => {
       <div className="flex justify-center items-center flex-col md:gap-15 lg:items-start lg:flex-row">
         <img
           className=" p-2 rounded-2xl lg:w-1/2 -translate-y-10 xl:-translate-y-30"
-          src="./kitchendevice-present.jpg"
-          alt="kitchendevice is doing a presentation"
+          src="./marketing/marketing-presentation.jpg"
+          alt="marketing-presentation"
         />
 
         <ul className="space-y-5 text-xl text-center mr-5 lg:text-start">

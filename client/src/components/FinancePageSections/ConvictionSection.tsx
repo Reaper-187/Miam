@@ -44,8 +44,8 @@ export const ConvictionSection = () => {
         </div>
         <img
           className="w-full rounded-2xl md:w-1/2"
-          src="./device-is-talking.jpg"
-          alt="device-is-talking"
+          src="./finance/finance-talking.jpg"
+          alt="finance-talking"
         />
       </div>
 

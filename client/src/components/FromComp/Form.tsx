@@ -7,13 +7,16 @@ import { useModal } from "@/Context/ModalContext";
 import { X } from "lucide-react";
 import { motion } from "framer-motion";
 import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { Calendar24 } from "@/components/FromComp/AppointmentPicker";
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 const FromFields = z.object({
   firstName: z.string().min(2),
   lastName: z.string().min(2),
-  email: z.string(),
+  userEmail: z.string(),
   date: z.date(),
   time: z.string(),
 });
@@ -24,16 +27,42 @@ export const FormModal = () => {
   const { isOpen, toggleOpen } = useModal();
   const [date, setDate] = useState<Date | undefined>();
   const [time, setTime] = useState<string>("10:30:00");
+  const [offSubmitBtn, setOffSubmitBtn] = useState<boolean>(false);
 
-  const { register, handleSubmit, setValue } = useForm<UserForm>();
+  const { register, handleSubmit, setValue } = useForm<UserForm>({
+    resolver: zodResolver(FromFields),
+  });
 
   useEffect(() => {
     if (date) setValue("date", date);
     setValue("time", time);
   }, [date, time]);
 
-  const onSubmit: SubmitHandler<UserForm> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<UserForm> = async (data) => {
+    const templateParams = {
+      firstName: data.firstName,
+      lastName: data.lastName,
+      userEmail: data.userEmail,
+      date: data.date,
+      time: data.time,
+    };
+
+    try {
+      await emailjs.send(
+        "service_qz5pn6t",
+        "template_jcya9fe",
+        templateParams,
+        "N92Zxo1JrdTPDjo9R"
+      );
+      setOffSubmitBtn(true);
+      toast("Anfrage erfolgreich gesendet");
+      setTimeout(() => {
+        setOffSubmitBtn(false);
+      }, 5000);
+    } catch (err) {
+      console.error("Fehler beim Senden:", err);
+      toast("Anfrage fehlgeschlagen");
+    }
   };
 
   return (
@@ -57,12 +86,12 @@ export const FormModal = () => {
                   <h1 className="text-xl font-semibold md:text-2xl lg:text-3xl">
                     Termin buchen
                   </h1>
-                  <button
+                  <span
                     onClick={toggleOpen}
-                    className="text-gray-500 hover:text-gray-700 transition-colors"
+                    className="cursor-pointer text-gray-500 hover:text-gray-700 transition-colors"
                   >
                     <X size={24} />
-                  </button>
+                  </span>
                 </div>
               </CardHeader>
 
@@ -73,16 +102,25 @@ export const FormModal = () => {
                 <div className="flex-1 space-y-4">
                   <div className="space-y-2">
                     <Label>Vorname:</Label>
-                    <Input {...register("firstName")} placeholder="Vorname" />
+                    <Input
+                      {...register("firstName")}
+                      name="firstName"
+                      placeholder="Vorname"
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label>Nachname:</Label>
-                    <Input {...register("lastName")} placeholder="Nachname" />
+                    <Input
+                      {...register("lastName")}
+                      name="lastName"
+                      placeholder="Nachname"
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label>E-Mail:</Label>
                     <Input
-                      {...register("email")}
+                      {...register("userEmail")}
+                      name="userEmail"
                       placeholder="E-Mail"
                       type="email"
                     />
@@ -97,8 +135,9 @@ export const FormModal = () => {
                     onTimeChange={setTime}
                   />
                   <Button
-                    className="w-full md:w-fit font-semibold mt-4"
+                    className="w-full cursor-pointer md:w-fit font-semibold mt-4"
                     type="submit"
+                    disabled={offSubmitBtn}
                   >
                     Absenden
                   </Button>

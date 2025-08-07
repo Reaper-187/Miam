@@ -9,9 +9,9 @@ export const QuoteSection = () => {
           <p className="cut-line"></p>
         </div>
         <p className="text-xs md:text-base lg:text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          expedita architecto voluptas cupiditate, quisquam atque accusamus
-          possimus cumque quos in?
+          Software ist nicht nur Code - es ist die Art und Weise, wie komplexe
+          Prozesse & Abläufe elegant gelöst werden können um ein Unternehemen
+          effizienter zu machen.
         </p>
         <div className="flex items-center gap-5">
           <img
@@ -27,8 +27,8 @@ export const QuoteSection = () => {
       </div>
       <img
         className="hidden lg:block w-1/2 rounded-2xl xl:translate-y-25"
-        src="./kitchendevice-on-Laptop.jpg"
-        alt="kitchendevice-on-Laptop"
+        src="./software/women-infront-of-laptop.jpg"
+        alt="women-infront-of-laptop"
       />
     </div>
   );

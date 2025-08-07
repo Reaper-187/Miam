@@ -8,34 +8,33 @@ export const Footer = () => {
         <div className="flex flex-col gap-5">
           <h1 className="font-semibold text-xl">MIAM D Consulting</h1>
           <div className="flex gap-5">
-            <Facebook />
-            <Linkedin />
-            <Youtube />
-            <Instagram />
+            <Facebook href="" />
+            <Linkedin href="" />
+            <Instagram href="" />
           </div>
         </div>
 
         <div className="flex justify-between w-full px-2 md:w-1/2 lg:w-1/4 ">
           <div className="text-xs md:text-base">
-            <h5 className="font-semibold">Dienste</h5>
+            <h5 className="font-semibold">Services</h5>
             <ol>
               <ul>Finance</ul>
               <ul>Marketing</ul>
               <ul>Software</ul>
             </ol>
           </div>
-          <div className="text-xs md:text-base">
+          {/* <div className="text-xs md:text-base">
             <h5 className="font-semibold">Projekte</h5>
             <ol>
               <ul>Page</ul>
               <ul>Page</ul>
               <ul>Page</ul>
             </ol>
-          </div>
+          </div> */}
           <div className="text-xs md:text-base">
             <h5 className="font-semibold">Kontakt</h5>
-            <p>E-Mail: email@email.com</p>
-            <p>phone: +069187</p>
+            <p>May Cheikhkamis</p>
+            <p>E-Mail: may.cheikhkamis@pearlcap.de</p>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { FromButton } from "../FromComp/FromButton";
 export const FinanceHeroSection = () => {
   return (
     <div className="relative">
-      <img src="marketing-img1.jpg" alt="device-talking" />
+      <img src="./finance/finance-title-img.jpg" alt="finance-title-img" />
 
       <div className="absolute top-1/2 left-1/2 -translate-1/2 w-full md:w-1/3">
         <div className="flex justify-center flex-col items-center gap-5 md:gap-10">

@@ -5,7 +5,7 @@ export const SoftwareLastSection = () => {
     <div className="flex justify-between px-10">
       <img
         className="hidden md:block w-1/3 rounded-2xl -translate-y-25"
-        src="./the-successfull-g.jpg"
+        src="./software/the-successfull-g.jpg"
         alt="the-successfull-g"
       />
       <div className="felx self-center space-y-10 p-2 md:w-1/2">

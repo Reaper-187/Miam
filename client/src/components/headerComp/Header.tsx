@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FiMenu, FiX, FiUser } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,6 @@ export const Header = () => {
     >
       <div className="container mx-auto px-4 py-3 md:py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Link
             to="/"
             className="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
@@ -31,7 +30,6 @@ export const Header = () => {
             MIAM D Consulting
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/marketing">Marketing</NavLink>
@@ -39,13 +37,7 @@ export const Header = () => {
             <NavLink to="/software">Software</NavLink>
           </nav>
 
-          {/* Mobile Menu Button */}
           <div className="flex items-center space-x-4">
-            <button className="hidden md:flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors">
-              <FiUser className="text-lg" />
-              <span>Login</span>
-            </button>
-
             <button
               className="md:hidden text-gray-700 focus:outline-none"
               onClick={() => setIsOpen(!isOpen)}
@@ -59,9 +51,12 @@ export const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-3">
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isOpen ? "max-h-96 mt-4 pb-4" : "max-h-0"
+          }`}
+        >
+          <div className="space-y-3">
             <MobileNavLink to="/" onClick={() => setIsOpen(false)}>
               Home
             </MobileNavLink>
@@ -74,12 +69,8 @@ export const Header = () => {
             <MobileNavLink to="/software" onClick={() => setIsOpen(false)}>
               Software
             </MobileNavLink>
-            <button className="w-full flex items-center justify-center space-x-2 py-2 px-4 text-gray-600 hover:text-blue-600 transition-colors">
-              <FiUser />
-              <span>Login</span>
-            </button>
           </div>
-        )}
+        </div>
       </div>
     </header>
   );

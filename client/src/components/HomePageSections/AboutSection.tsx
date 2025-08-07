@@ -4,7 +4,11 @@ export const AboutSection = () => {
       <div className="hidden lg:flex items-center justify-evenly bg-[#f4f3f0] w-full lg:w-1/2">
         <div className="relative flex justify-center items-center py-2">
           <h1 className="absolute text-black text-[3vw]">Wer sind wir</h1>
-          <img className="w-1/2 rounded-2xl" src="./img2.jpg" alt="img1" />
+          <img
+            className="w-1/2 rounded-2xl"
+            src="./home/who-are-we-img.jpg"
+            alt="img1"
+          />
         </div>
       </div>
 

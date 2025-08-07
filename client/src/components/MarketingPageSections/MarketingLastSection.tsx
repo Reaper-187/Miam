@@ -11,7 +11,7 @@ export const MarketingLastSection = () => {
 
         <img
           className="hidden lg:block absolute right-80 -top-10 w-1/5 rounded-2xl lg:right-50"
-          src="./device-meeting.jpg"
+          src="./marketing/marketing-meeting.jpg"
           alt="Kitchendevice-meeting"
         />
       </div>

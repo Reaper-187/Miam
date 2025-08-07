@@ -7,6 +7,7 @@ import { Finance } from "./Pages/Finance";
 import { MarketingShowcaseSection } from "./components/MarketingPageSections/MarketingShowcaseSection";
 import { Footer } from "./components/FooterSection/Footer";
 import { Software } from "./Pages/Software";
+import { FormModal } from "@/components/FromComp/Form";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/finance" element={<Finance />} />
         <Route path="/software" element={<Software />} />
       </Routes>
+      <FormModal />
+
       <MarketingShowcaseSection />
       <Footer />
     </>

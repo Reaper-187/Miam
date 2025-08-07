@@ -1,4 +1,3 @@
-import { FormModal } from "@/components/FromComp/Form";
 import { AboutSection } from "../components/HomePageSections/AboutSection";
 import { HeroSection } from "../components/HomePageSections/HeroSection";
 import { ServiceOverviewSection } from "../components/HomePageSections/ServiceOverviewSection";
@@ -10,7 +9,6 @@ export const Home = () => {
       <HeroSection />
       <AboutSection />
       <ServiceOverviewSection />
-      <FormModal />
     </>
   );
 };

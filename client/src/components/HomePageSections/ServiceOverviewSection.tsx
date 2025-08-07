@@ -6,9 +6,9 @@ type OverviewData = {
 };
 
 const data: OverviewData[] = [
-  { imgUrl: "./finance-service.jpg", title: "Finance" },
-  { imgUrl: "./service-marketing.jpg", title: "Marketing" },
-  { imgUrl: "./sw-service.jpg", title: "Software" },
+  { imgUrl: "./home/finance-service.jpg", title: "Finance" },
+  { imgUrl: "./home/service-marketing.jpg", title: "Marketing" },
+  { imgUrl: "./home/sw-service.jpg", title: "Software" },
 ];
 
 export const ServiceOverviewSection = () => {

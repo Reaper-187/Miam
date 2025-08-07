@@ -7,8 +7,8 @@ export const FinanceKnowHow = () => {
         </h1>
         <img
           className="hidden rounded-2xl absolute right-1/7 top-[10%] md:block sm:max-w-[20%]"
-          src="kitchen-device-connection.jpg"
-          alt="kitchen-device-connection"
+          src="./finance/high-five.jpg"
+          alt="high-five"
         />
       </div>
     </>

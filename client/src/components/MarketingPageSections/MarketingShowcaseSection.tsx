@@ -8,6 +8,31 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 import { FromButton } from "../FromComp/FromButton";
+import { toast } from "sonner";
+
+type CarouselContent = {
+  title: string;
+  imageUrl: string;
+  description: string;
+};
+
+const analysisData: CarouselContent[] = [
+  {
+    title: "Project X",
+    description: "Coming-Soon",
+    imageUrl: "./home/finance-service.jpg",
+  },
+  {
+    title: "Project X",
+    description: "Coming-Soon",
+    imageUrl: "./home/finance-service.jpg",
+  },
+  {
+    title: "Project X",
+    description: "Coming-Soon",
+    imageUrl: "./home/finance-service.jpg",
+  },
+];
 
 export const MarketingShowcaseSection = () => {
   return (
@@ -16,37 +41,21 @@ export const MarketingShowcaseSection = () => {
       <div className="flex md:w-[50%] lg:w-[80%] justify-self-center">
         <Carousel>
           <CarouselContent>
-            <CarouselItem>
-              <div className="flex">
-                <img
-                  className="w-fit lg:w-1/2"
-                  src="./finance-service.jpg"
-                  alt="img1"
-                />
-                <div className="hidden lg:block">
-                  <h3>Projekt X</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Exercitationem eveniet corrupti ducimus repellat obcaecati
-                    ut quo eius, deleniti amet nihil.
-                  </p>
+            {analysisData.map((cardContent, i) => (
+              <CarouselItem key={i}>
+                <div className="flex items-center justify-evenly">
+                  <img
+                    className="w-fit lg:w-1/2"
+                    src={cardContent.imageUrl}
+                    alt="img1"
+                  />
+                  <div className="hidden lg:block md:text-xl">
+                    <h3>{cardContent.title}</h3>
+                    <p>{cardContent.description}</p>
+                  </div>
                 </div>
-              </div>
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                className="w-fit lg:w-1/2"
-                src="./finance-service.jpg"
-                alt="img1"
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                className="w-fit lg:w-1/2"
-                src="./finance-service.jpg"
-                alt="img1"
-              />
-            </CarouselItem>
+              </CarouselItem>
+            ))}
           </CarouselContent>
           <span className="hidden md:block">
             <CarouselPrevious />
@@ -59,7 +68,10 @@ export const MarketingShowcaseSection = () => {
         Dinge ins Rollen bringen. Statt viel zu versprechen, lassen wir lieber
         Ergebnisse sprechen - und die Menschen, die mit uns gearbeitet haben.
       </p>
-      <Button className="my-5">
+      <Button
+        className="my-5"
+        onClick={() => toast("not available - coming soon :)")}
+      >
         Weitere Projekte <CircleArrowRight />
       </Button>
 
@@ -69,8 +81,11 @@ export const MarketingShowcaseSection = () => {
         </h1>
         <div className="flex gap-5 items-center">
           <FromButton />
-          {/* <<Button className="mt-3 md:mt-0 lg:text-xl">Termin buchen</Button>> */}
-          <Button className="mt-3 text-base md:mt-0 lg:text-lg">
+
+          <Button
+            className="mt-3 text-base md:mt-0 lg:text-lg"
+            onClick={() => toast("lies die anderen Pages durch moruk")}
+          >
             Mehr über uns
           </Button>
         </div>
